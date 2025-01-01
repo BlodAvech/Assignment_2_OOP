@@ -4,6 +4,8 @@ import Classes.Student;
 import Interfaces.Payable;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 
 public class MyApplication {
     public static void main(String[] args)
@@ -21,6 +23,8 @@ public class MyApplication {
         persons.add(pudge);
         persons.add(nursultan);
         persons.add(vitaliy);
+
+        Collections.sort(persons);
 
         printData(persons);
     }

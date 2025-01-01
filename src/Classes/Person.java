@@ -2,7 +2,7 @@ package Classes;
 
 import Interfaces.Payable;
 
-public abstract class Person implements Payable
+public abstract class Person implements Payable , Comparable<Person>
 {
     private static int id_gen = 1;
     private int id;
@@ -42,6 +42,11 @@ public abstract class Person implements Payable
     }
 
     public abstract String getPosition();
+
+    @Override
+    public  int compareTo(Person other){
+        return Double.compare(this.getPaymentAmount() , other.getPaymentAmount());
+    }
 
     @Override
     public String toString() {
