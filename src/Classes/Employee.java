@@ -2,7 +2,7 @@ package Classes;
 
 import Interfaces.Payable;
 
-public class Employee extends Person implements Payable
+public class Employee extends Person
 {
     private String position;
     private double salary;

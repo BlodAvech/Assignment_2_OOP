@@ -1,6 +1,8 @@
 package Classes;
 
-public abstract class Person
+import Interfaces.Payable;
+
+public abstract class Person implements Payable
 {
     private static int id_gen = 1;
     private int id;

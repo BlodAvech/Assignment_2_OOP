@@ -2,7 +2,7 @@ package Classes;
 
 import Interfaces.Payable;
 
-public class Student extends Person implements Payable
+public class Student extends Person
 {
     private double gpa;
 
